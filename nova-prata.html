@@ -4,110 +4,229 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Estética Automotiva em Nova Prata — Box Garage Detail</title>
-  <meta name="description" content="Polimento, vitrificação, higienização e proteção de pintura em Nova Prata-RS. Box Garage Detail — qualidade em detalhamento automotivo perto de você. Agende pelo WhatsApp." />
+  <meta name="description" content="Polimento, vitrificação, higienização interna e proteção de pintura em Nova Prata-RS. Box Garage Detail — referência regional em detalhamento automotivo. Agende pelo WhatsApp." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://boxgaragedetail.com.br/nova-prata" />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&family=Oswald:wght@200;300;400;600&display=swap" rel="stylesheet" />
   <style>
-    :root { --ink:#0C0A08; --ink2:#141210; --ink3:#1C1916; --paper:#F0EAE0; --amber:#C8922A; --amber2:#E0A830; }
+    :root { --ink:#0C0A08; --ink2:#141210; --ink3:#1C1916; --paper:#F0EAE0; --paper2:#E2DAC8; --paper3:#C8BFA8; --ash:#666; --smoke:#999; --white:#F8F4EE; }
     * { margin:0; padding:0; box-sizing:border-box; }
-    body { background:var(--ink); color:var(--paper); font-family:'IM Fell English',serif; }
-    a { color:var(--amber); text-decoration:none; }
-    nav { display:flex; align-items:center; justify-content:space-between; padding:18px 5%; background:rgba(12,10,8,.95); border-bottom:1px solid rgba(200,146,42,.2); position:sticky; top:0; z-index:100; }
-    .nav-logo { font-family:'Oswald',sans-serif; font-weight:600; font-size:1.1rem; letter-spacing:.12em; color:var(--paper); }
-    .nav-logo span { color:var(--amber); }
-    .nav-back { font-family:'Oswald',sans-serif; font-size:.8rem; letter-spacing:.1em; color:var(--amber); }
-    .hero { background:linear-gradient(135deg,#0C0A08 0%,#1C1510 50%,#0C0A08 100%); padding:80px 5% 70px; text-align:center; border-bottom:1px solid rgba(200,146,42,.15); }
-    .hero-tag { font-family:'Oswald',sans-serif; font-weight:300; font-size:.75rem; letter-spacing:.25em; color:var(--amber); text-transform:uppercase; margin-bottom:16px; }
-    .hero h1 { font-family:'Oswald',sans-serif; font-weight:600; font-size:clamp(2rem,5vw,3.2rem); letter-spacing:.06em; line-height:1.15; margin-bottom:20px; }
-    .hero h1 span { color:var(--amber); }
-    .hero p { font-size:1.05rem; line-height:1.7; max-width:580px; margin:0 auto 36px; color:#C8BFA8; font-style:italic; }
-    .btn-wa { display:inline-flex; align-items:center; gap:10px; background:var(--amber); color:var(--ink); font-family:'Oswald',sans-serif; font-weight:600; font-size:.9rem; letter-spacing:.12em; text-transform:uppercase; padding:14px 32px; border-radius:2px; }
-    .btn-wa:hover { background:var(--amber2); }
-    .servicos { padding:70px 5%; background:var(--ink2); }
-    .sec-title { font-family:'Oswald',sans-serif; font-weight:300; font-size:.7rem; letter-spacing:.3em; color:var(--amber); text-transform:uppercase; margin-bottom:10px; }
-    .sec-h2 { font-family:'Oswald',sans-serif; font-weight:600; font-size:clamp(1.5rem,3vw,2rem); margin-bottom:48px; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; }
-    .card { background:var(--ink3); border:1px solid rgba(200,146,42,.12); padding:28px 24px; border-radius:3px; }
-    .card-icon { font-size:1.8rem; margin-bottom:14px; }
-    .card h3 { font-family:'Oswald',sans-serif; font-weight:600; font-size:1rem; letter-spacing:.08em; margin-bottom:10px; color:var(--amber2); }
-    .card p { font-size:.88rem; line-height:1.65; color:#C8BFA8; font-style:italic; }
-    .porq { padding:70px 5%; }
-    .porq-inner { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; max-width:900px; }
-    .porq ul { list-style:none; display:flex; flex-direction:column; gap:16px; margin-top:20px; }
-    .porq li { display:flex; gap:12px; font-size:.95rem; line-height:1.6; color:#C8BFA8; font-style:italic; }
-    .porq li::before { content:"—"; color:var(--amber); flex-shrink:0; }
-    .stat { text-align:center; border:1px solid rgba(200,146,42,.2); padding:30px 20px; border-radius:3px; }
-    .stat strong { display:block; font-family:'Oswald',sans-serif; font-size:2.8rem; font-weight:600; color:var(--amber); }
-    .stat span { font-size:.8rem; letter-spacing:.12em; color:#999; font-family:'Oswald',sans-serif; text-transform:uppercase; }
-    .cta { padding:70px 5%; text-align:center; background:linear-gradient(to bottom,var(--ink2),var(--ink)); border-top:1px solid rgba(200,146,42,.15); }
-    .cta h2 { font-family:'Oswald',sans-serif; font-size:clamp(1.4rem,3vw,2rem); font-weight:600; margin-bottom:12px; }
-    .cta p { color:#C8BFA8; font-style:italic; margin-bottom:32px; font-size:.95rem; }
-    footer { background:#080806; padding:28px 5%; text-align:center; font-family:'Oswald',sans-serif; font-size:.75rem; letter-spacing:.1em; color:#555; }
-    footer a { color:#666; }
-    @media(max-width:680px) { .porq-inner { grid-template-columns:1fr; gap:36px; } }
+    html { scroll-behavior:smooth; }
+    body { background:var(--ink); color:var(--paper); font-family:'IM Fell English',serif; overflow-x:hidden; }
+    body::after { content:''; position:fixed; inset:0; pointer-events:none; z-index:9000; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23g)' opacity='0.07'/%3E%3C/svg%3E"); }
+    a { color:var(--paper); text-decoration:none; }
+
+    nav { position:fixed; top:0; left:0; right:0; z-index:500; display:flex; justify-content:space-between; align-items:center; padding:1rem 3.5rem; background:rgba(12,10,8,.96); border-bottom:1px solid rgba(240,234,224,.07); }
+    .nav-brand { font-family:'Almendra Display',serif; font-size:1.1rem; color:var(--paper); letter-spacing:.08em; }
+    .nav-back { font-family:'Oswald',sans-serif; font-size:.62rem; font-weight:300; letter-spacing:.28em; text-transform:uppercase; color:var(--ash); transition:color .3s; }
+    .nav-back:hover { color:var(--paper); }
+    .nav-btn { font-family:'Oswald',sans-serif; font-size:.62rem; font-weight:400; letter-spacing:.25em; text-transform:uppercase; color:var(--ink) !important; background:var(--paper); padding:.5rem 1.3rem; transition:opacity .3s; }
+    .nav-btn:hover { opacity:.85; }
+
+    .sec-label { font-family:'Cinzel',serif; font-size:.6rem; font-weight:400; letter-spacing:.55em; text-transform:uppercase; color:var(--smoke); display:block; margin-bottom:1rem; }
+    .sec-title { font-family:'Cinzel Decorative',serif; font-size:clamp(1.7rem,3.2vw,2.6rem); font-weight:700; color:var(--white); line-height:1.15; margin-bottom:1rem; }
+    .sec-title em { font-style:italic; font-weight:400; font-family:'IM Fell English',serif; font-size:1.1em; }
+
+    .flourish { display:flex; align-items:center; justify-content:center; gap:.6rem; margin:1.2rem 0; }
+    .flourish svg { width:160px; height:18px; opacity:.35; }
+
+    .fi { opacity:0; transform:translateY(26px); transition:opacity .75s ease,transform .75s ease; }
+    .fi.on { opacity:1; transform:translateY(0); }
+    .fi.d1 { transition-delay:.12s; }
+    .fi.d2 { transition-delay:.24s; }
+
+    /* HERO */
+    #hero { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:8rem 2rem 5rem; position:relative; overflow:hidden; background:var(--ink); }
+    #hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 90% 75% at 50% 45%, transparent 30%, rgba(12,10,8,.85) 100%), linear-gradient(to bottom, rgba(12,10,8,.5) 0%, transparent 25%, transparent 60%, rgba(12,10,8,.95) 100%); z-index:1; pointer-events:none; }
+    .hero-bg { position:absolute; inset:0; background:linear-gradient(135deg, #0C0A08 0%, #1a1208 40%, #0C0A08 100%); z-index:0; }
+    .hero-bg::after { content:''; position:absolute; inset:0; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z' fill='none' stroke='rgba(240,234,224,0.015)' stroke-width='0.5'/%3E%3C/svg%3E"); }
+    .hero-inner { position:relative; z-index:2; max-width:760px; display:flex; flex-direction:column; align-items:center; text-align:center; padding:0 1.5rem; }
+    .hero-eyebrow { font-family:'Cinzel',serif; font-size:.55rem; font-weight:400; letter-spacing:.3em; text-transform:uppercase; color:var(--smoke); display:block; margin-bottom:2.5rem; }
+    .hero-frase { font-family:'IM Fell English',serif; font-style:italic; font-size:clamp(1.7rem,4.5vw,3.8rem); color:var(--white); line-height:1.3; margin-bottom:0; text-shadow:0 2px 40px rgba(0,0,0,.8); max-width:700px; }
+    .hero-sub { font-family:'Cinzel',serif; font-size:.62rem; letter-spacing:.35em; text-transform:uppercase; color:var(--ash); margin:1.8rem 0 2.5rem; }
+    .hero-btns { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+    .btn-solid { font-family:'Oswald',sans-serif; font-size:.68rem; font-weight:600; letter-spacing:.28em; text-transform:uppercase; color:var(--ink); background:var(--paper); padding:.9rem 2.2rem; text-decoration:none; transition:opacity .3s; display:inline-flex; align-items:center; gap:.6rem; }
+    .btn-solid:hover { opacity:.85; }
+    .btn-ghost { font-family:'Oswald',sans-serif; font-size:.68rem; font-weight:300; letter-spacing:.28em; text-transform:uppercase; color:var(--paper); background:transparent; border:1px solid rgba(240,234,224,.18); padding:.9rem 2.2rem; text-decoration:none; transition:border-color .3s; display:inline-block; }
+    .btn-ghost:hover { border-color:var(--paper); }
+    .scroll-hint { margin-top:5rem; position:relative; z-index:2; display:flex; flex-direction:column; align-items:center; gap:.5rem; }
+    .scroll-hint span { font-family:'Cinzel',serif; font-size:.5rem; letter-spacing:.5em; text-transform:uppercase; color:var(--ash); }
+    .scroll-tick { width:1px; height:46px; background:linear-gradient(to bottom,rgba(240,234,224,.4),transparent); animation:tick 2.2s ease-in-out infinite; }
+    @keyframes tick { 0%,100%{opacity:.2} 50%{opacity:1} }
+
+    /* BAND */
+    .band-divider { background:var(--ink2); height:2.2rem; display:flex; align-items:center; justify-content:center; gap:0; overflow:hidden; }
+    .bd-line { flex:1; height:1px; background:rgba(240,234,224,.07); }
+    .bd-text { font-family:'Cinzel',serif; font-size:.52rem; letter-spacing:.8em; text-transform:uppercase; color:rgba(240,234,224,.15); padding:0 2rem; white-space:nowrap; }
+
+    /* SERVIÇOS */
+    #servicos { background:var(--ink2); padding:7rem 4rem; position:relative; }
+    .sec-header { text-align:center; max-width:580px; margin:0 auto 5rem; }
+    .servicos-grid { display:grid; grid-template-columns:repeat(3,1fr); max-width:1100px; margin:0 auto; border:1px solid rgba(240,234,224,.06); }
+    .srv { padding:2.8rem 2.2rem; border-right:1px solid rgba(240,234,224,.06); border-bottom:1px solid rgba(240,234,224,.06); position:relative; transition:background .4s; }
+    .srv:nth-child(3n) { border-right:none; }
+    .srv:nth-child(n+4) { border-bottom:none; }
+    .srv:hover { background:rgba(240,234,224,.025); }
+    .srv-num { font-family:'Cinzel Decorative',serif; font-size:4.5rem; font-weight:900; color:rgba(240,234,224,.04); line-height:1; position:absolute; top:1rem; right:1.2rem; pointer-events:none; transition:color .4s; }
+    .srv:hover .srv-num { color:rgba(240,234,224,.07); }
+    .srv-glyph { font-family:'Almendra Display',cursive; font-size:2.2rem; color:rgba(240,234,224,.18); display:block; margin-bottom:1rem; line-height:1; transition:color .4s; }
+    .srv:hover .srv-glyph { color:rgba(240,234,224,.32); }
+    .srv-name { font-family:'Cinzel',serif; font-size:1rem; font-weight:700; color:var(--white); letter-spacing:.08em; margin-bottom:.7rem; text-transform:uppercase; }
+    .srv-desc { font-family:'IM Fell English',serif; font-size:.9rem; color:var(--ash); line-height:1.8; text-align:justify; }
+
+    /* STATS */
+    #stats { background:var(--paper); padding:3rem 4rem; }
+    .stats-inner { display:flex; justify-content:space-around; align-items:center; max-width:900px; margin:0 auto; flex-wrap:wrap; gap:2rem; }
+    .st { text-align:center; }
+    .st-num { font-family:'Cinzel Decorative',serif; font-size:2.6rem; font-weight:900; color:var(--ink); line-height:1; display:block; }
+    .st-lbl { font-family:'Cinzel',serif; font-size:.55rem; font-weight:400; letter-spacing:.25em; text-transform:uppercase; color:var(--ash); }
+    .st-sep { width:1px; height:44px; background:rgba(12,10,8,.15); }
+
+    /* POR QUÊ */
+    #porque { background:var(--ink); padding:7rem 4rem; position:relative; overflow:hidden; }
+    #porque::before { content:'WHY'; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-family:'Almendra Display',cursive; font-size:clamp(8rem,22vw,20rem); color:rgba(240,234,224,.02); pointer-events:none; white-space:nowrap; letter-spacing:.1em; }
+    .porque-header { max-width:540px; margin-bottom:4.5rem; }
+    .porque-grid { display:grid; grid-template-columns:repeat(3,1fr); max-width:1100px; border:1px solid rgba(240,234,224,.06); }
+    .pq { padding:2.2rem 2rem; border-right:1px solid rgba(240,234,224,.06); border-bottom:1px solid rgba(240,234,224,.06); transition:background .4s; }
+    .pq:nth-child(3n) { border-right:none; }
+    .pq:nth-child(n+4) { border-bottom:none; }
+    .pq:hover { background:rgba(240,234,224,.02); }
+    .pq-q { font-family:'Cinzel',serif; font-size:.85rem; font-weight:600; color:var(--paper2); margin-bottom:.8rem; line-height:1.4; letter-spacing:.03em; }
+    .pq-a { font-family:'IM Fell English',serif; font-size:.88rem; color:var(--ash); line-height:1.82; text-align:justify; }
+    .pq-a strong { font-style:italic; color:var(--smoke); }
+
+    /* CTA */
+    #cta { background:var(--ink2); padding:7rem 4rem; text-align:center; position:relative; overflow:hidden; }
+    #cta::before { content:'DETAIL'; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-family:'Almendra Display',cursive; font-size:clamp(5rem,18vw,16rem); color:rgba(240,234,224,.03); pointer-events:none; white-space:nowrap; }
+    .cta-inner { position:relative; z-index:2; }
+    .cta-label { font-family:'Cinzel',serif; font-size:.58rem; font-weight:400; letter-spacing:.6em; text-transform:uppercase; color:var(--smoke); display:block; margin-bottom:1rem; }
+    .cta-title { font-family:'Cinzel Decorative',serif; font-size:clamp(2rem,4.5vw,3.5rem); font-weight:900; color:var(--white); line-height:1.1; margin-bottom:.8rem; }
+    .cta-title em { font-family:'IM Fell English',serif; font-style:italic; font-weight:400; }
+    .cta-p { font-family:'IM Fell English',serif; font-style:italic; font-size:1rem; color:var(--ash); margin-bottom:3rem; }
+    .btn-dark { font-family:'Oswald',sans-serif; font-size:.68rem; font-weight:600; letter-spacing:.28em; text-transform:uppercase; color:var(--ink); background:var(--paper); padding:1rem 2.5rem; text-decoration:none; transition:opacity .3s; display:inline-flex; align-items:center; gap:.7rem; }
+    .btn-dark:hover { opacity:.8; }
+
+    /* FOOTER */
+    footer { background:var(--ink); border-top:1px solid rgba(240,234,224,.05); padding:2.5rem 4rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.2rem; }
+    .footer-logo { width:90px; filter:saturate(0) contrast(30) brightness(2); mix-blend-mode:screen; opacity:.7; }
+    footer ul { list-style:none; display:flex; gap:2rem; flex-wrap:wrap; }
+    footer ul a { font-family:'Cinzel',serif; font-size:.55rem; font-weight:400; letter-spacing:.25em; text-transform:uppercase; color:var(--ash); text-decoration:none; transition:color .3s; }
+    footer ul a:hover { color:var(--paper); }
+    .f-copy { font-family:'IM Fell English',serif; font-style:italic; font-size:.73rem; color:rgba(240,234,224,.18); }
+
+    @media(max-width:960px) {
+      nav { padding:1rem 1.5rem; }
+      #servicos,#porque,#cta,#stats { padding:5rem 1.5rem; }
+      .servicos-grid,.porque-grid { grid-template-columns:1fr; }
+      .srv,.pq { border-right:none; }
+      .srv:last-child,.pq:last-child { border-bottom:none; }
+      footer { flex-direction:column; text-align:center; }
+    }
   </style>
 </head>
 <body>
 
 <nav>
-  <span class="nav-logo">BOX <span>GARAGE</span> DETAIL</span>
-  <a href="https://boxgaragedetail.com.br" class="nav-back">← Ver site completo</a>
+  <div class="nav-brand">Box Garage Detail</div>
+  <a href="https://boxgaragedetail.com.br" class="nav-back">← Site principal</a>
+  <a href="https://wa.me/5554991306578?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20para%20Nova%20Prata" class="nav-btn">Agendar</a>
 </nav>
 
-<section class="hero">
-  <p class="hero-tag">Estética Automotiva · Nova Prata — RS</p>
-  <h1>Detalhamento Automotivo<br/>em <span>Nova Prata</span></h1>
-  <p>Polimento, vitrificação, higienização interna e proteção de pintura. Atendemos Nova Prata e região com técnica profissional e produtos de alta performance.</p>
-  <a href="https://wa.me/5554991306578?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20para%20Nova%20Prata" class="btn-wa">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    Pedir orçamento
-  </a>
-</section>
-
-<section class="servicos">
-  <p class="sec-title">O que fazemos</p>
-  <h2 class="sec-h2">Serviços em Nova Prata</h2>
-  <div class="grid">
-    <div class="card"><div class="card-icon">✦</div><h3>Polimento Técnico</h3><p>Remoção de riscos, oxidação e marcas de uso. Pintura restaurada com acabamento espelhado.</p></div>
-    <div class="card"><div class="card-icon">◈</div><h3>Vitrificação de Pintura</h3><p>Camada protetora de longa duração contra raios UV, chuva ácida e contaminantes.</p></div>
-    <div class="card"><div class="card-icon">◉</div><h3>Higienização Interna</h3><p>Limpeza profunda de bancos, carpetes, teto e plásticos. Eliminação de odores e bactérias.</p></div>
-    <div class="card"><div class="card-icon">⬡</div><h3>Proteção de Pintura</h3><p>PPF e películas protetoras para preservar a pintura original contra pedriscos e arranhões.</p></div>
-    <div class="card"><div class="card-icon">◇</div><h3>Lavagem Detalhada</h3><p>Descontaminação completa da pintura, rodas, pneus e vidros com produtos premium.</p></div>
-    <div class="card"><div class="card-icon">✧</div><h3>Headlight Restoration</h3><p>Recuperação de faróis amarelados e opacos. Transparência e segurança de volta ao original.</p></div>
-  </div>
-</section>
-
-<section class="porq">
-  <p class="sec-title">Por que a Box Garage</p>
-  <h2 class="sec-h2">Referência regional em<br/>detalhamento automotivo</h2>
-  <div class="porq-inner">
-    <ul>
-      <li>+10 anos de experiência em estética e proteção de veículos</li>
-      <li>Produtos de alta performance importados e nacionais premium</li>
-      <li>Atendimento personalizado — cada carro tratado com atenção individual</li>
-      <li>Localizado em Veranópolis, atendemos Nova Prata e toda a região</li>
-      <li>Orçamento sem compromisso pelo WhatsApp</li>
-    </ul>
-    <div>
-      <div class="stat" style="margin-bottom:16px"><strong>+10</strong><span>Anos de experiência</span></div>
-      <div class="stat"><strong>100%</strong><span>Satisfação garantida</span></div>
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner fi">
+    <span class="hero-eyebrow">Box Garage Detail &nbsp;·&nbsp; Nova Prata — RS</span>
+    <p class="hero-frase">Detalhamento automotivo<br/>em <em>Nova Prata</em></p>
+    <div class="flourish" style="margin:1.5rem 0;">
+      <svg viewBox="0 0 200 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:160px;opacity:.25;"><path d="M0 7 Q50 1 100 7 Q150 13 200 7" stroke="#F0EAE0" stroke-width="0.8" fill="none"/><circle cx="0" cy="7" r="1.5" fill="#F0EAE0"/><circle cx="100" cy="7" r="1.5" fill="#F0EAE0"/><circle cx="200" cy="7" r="1.5" fill="#F0EAE0"/></svg>
+    </div>
+    <p class="hero-sub">Polimento · Vitrificação · Higienização · Proteção de Pintura</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/5554991306578?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20para%20Nova%20Prata" class="btn-solid"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Agendar agora</a>
+      <a href="#servicos" class="btn-ghost">Ver serviços</a>
     </div>
   </div>
+  <div class="scroll-hint fi d2"><span>Descer</span><div class="scroll-tick"></div></div>
 </section>
 
-<section class="cta">
-  <h2>Atendemos Nova Prata e região</h2>
-  <p>Entre em contato agora e garanta seu agendamento.<br/>Orçamento gratuito, sem compromisso.</p>
-  <a href="https://wa.me/5554991306578?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20para%20Nova%20Prata" class="btn-wa">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    Falar no WhatsApp
-  </a>
+<div class="band-divider">
+  <div class="bd-line"></div>
+  <div class="bd-text">✦ &nbsp; Atendemos Nova Prata e região &nbsp; ✦</div>
+  <div class="bd-line"></div>
+</div>
+
+<section id="servicos">
+  <div class="sec-header fi">
+    <span class="sec-label">O que oferecemos</span>
+    <h2 class="sec-title">Cada detalhe<br/><em>tem um propósito</em></h2>
+    <div class="flourish" style="justify-content:center;">
+      <svg viewBox="0 0 120 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100px;opacity:.3;"><path d="M0 7 Q30 1 60 7 Q90 13 120 7" stroke="#F0EAE0" stroke-width="0.8" fill="none"/><circle cx="0" cy="7" r="1.2" fill="#F0EAE0"/><circle cx="60" cy="7" r="1.2" fill="#F0EAE0"/><circle cx="120" cy="7" r="1.2" fill="#F0EAE0"/></svg>
+    </div>
+  </div>
+  <div class="servicos-grid fi d1">
+    <div class="srv"><div class="srv-num">I</div><span class="srv-glyph">P</span><div class="srv-name">Polimento</div><p class="srv-desc">Remoção de riscos, oxidação e imperfeições do verniz. Técnica e produtos de alto padrão que devolvem o brilho original da pintura.</p></div>
+    <div class="srv"><div class="srv-num">II</div><span class="srv-glyph">H</span><div class="srv-name">Higienização Interna</div><p class="srv-desc">Limpeza profunda de bancos, tapetes, teto e painéis. Extração de sujeira, ácaros e odores com equipamentos profissionais.</p></div>
+    <div class="srv"><div class="srv-num">III</div><span class="srv-glyph">P</span><div class="srv-name">Proteção de Pintura</div><p class="srv-desc">Ceras de carnaúba, sealants sintéticos e revestimentos cerâmicos. Proteção real contra UV, chuva ácida e contaminantes externos.</p></div>
+    <div class="srv"><div class="srv-num">IV</div><span class="srv-glyph">V</span><div class="srv-name">Vitrificação</div><p class="srv-desc">Camada de proteção que se liga quimicamente à pintura. Hidrofóbico, resistente a riscos leves e com durabilidade de anos.</p></div>
+    <div class="srv"><div class="srv-num">V</div><span class="srv-glyph">D</span><div class="srv-name">Detalhamento Completo</div><p class="srv-desc">Do capô ao escapamento. Cobertura meticulosa de cada centímetro — dentro e fora, com o cuidado de quem trata o carro como o próprio.</p></div>
+    <div class="srv"><div class="srv-num">VI</div><span class="srv-glyph">M</span><div class="srv-name">Motos</div><p class="srv-desc">Atenção especial às partes cromadas, tanque, plásticos e motor. O mesmo padrão aplicado aos carros, agora para motocicletas.</p></div>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="stats-inner fi">
+    <div class="st"><span class="st-num">+10 anos</span><span class="st-lbl">Experiência</span></div>
+    <div class="st-sep"></div>
+    <div class="st"><span class="st-num">100%</span><span class="st-lbl">Exclusivo</span></div>
+    <div class="st-sep"></div>
+    <div class="st"><span class="st-num">1 a 1</span><span class="st-lbl">Atendimento</span></div>
+    <div class="st-sep"></div>
+    <div class="st"><span class="st-num">Artesanal</span><span class="st-lbl">Cada detalhe</span></div>
+  </div>
+</section>
+
+<section id="porque">
+  <div class="porque-header fi">
+    <span class="sec-label">Conhecimento & curiosidades</span>
+    <h2 class="sec-title" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">Por que investir em<br/><em>detalhamento?</em></h2>
+  </div>
+  <div class="porque-grid fi d1">
+    <div class="pq"><p class="pq-q">Por que polir e não só lavar?</p><p class="pq-a">A lavagem remove sujeira da superfície. Mas riscos microscópicos, oxidação e overspray ficam alojados no verniz. O polimento atua nessa camada — <strong>restituindo o brilho real</strong> que nenhuma lavagem alcança.</p></div>
+    <div class="pq"><p class="pq-q">O que é proteção cerâmica?</p><p class="pq-a">Um revestimento que se liga quimicamente à pintura formando uma camada <strong>dura e hidrofóbica</strong>. Repele água, UV e riscos leves por anos — diferente das ceras convencionais que duram semanas.</p></div>
+    <div class="pq"><p class="pq-q">Por que higienizar o interior?</p><p class="pq-a">Bancos e carpetes retêm até <strong>10× mais bactérias</strong> que um vaso sanitário. A higienização profissional com vapor elimina ácaros, fungos e odores — vital para famílias com crianças e pets.</p></div>
+    <div class="pq"><p class="pq-q">Isso valoriza o veículo?</p><p class="pq-a">Um carro bem conservado pode valer até <strong>30% a mais na revenda</strong>. O histórico de cuidados com detalhamento é um diferencial que compradores experientes reconhecem e pagam.</p></div>
+    <div class="pq"><p class="pq-q">Quanto tempo leva o serviço?</p><p class="pq-a">Depende do estado e tipo de serviço. Um detalhamento completo pode levar <strong>1 a 2 dias</strong>. Porque pressa e qualidade não combinam — cada etapa tem o tempo que merece.</p></div>
+    <div class="pq"><p class="pq-q">Atende </p><p class="pq-a">Sim. A Box Garage Detail está localizada em Veranópolis e atende toda a região, incluindo Nova Prata. O agendamento é feito pelo WhatsApp — <strong>rápido, sem burocracia</strong>, com hora marcada.</p></div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta-inner fi">
+    <span class="cta-label">Pronto para começar?</span>
+    <div class="flourish" style="margin-bottom:1rem;">
+      <svg viewBox="0 0 120 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:90px;opacity:.2;"><path d="M0 7 Q30 1 60 7 Q90 13 120 7" stroke="#0C0A08" stroke-width="0.8" fill="none"/><circle cx="0" cy="7" r="1.2" fill="#0C0A08"/><circle cx="60" cy="7" r="1.2" fill="#0C0A08"/><circle cx="120" cy="7" r="1.2" fill="#0C0A08"/></svg>
+    </div>
+    <h2 class="cta-title">Seu carro merece mais<br/><em>do que uma lavagem.</em></h2>
+    <p class="cta-p">Atendemos Nova Prata e região. Agende agora e descubra a diferença do detalhamento feito com cuidado.</p>
+    <a href="https://wa.me/5554991306578?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20para%20Nova%20Prata" class="btn-dark"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Agendar pelo WhatsApp</a>
+  </div>
 </section>
 
 <footer>
-  <p>Box Garage Detail · R. Luís Siviero, 844 — Femaça, Veranópolis-RS · <a href="https://boxgaragedetail.com.br">boxgaragedetail.com.br</a></p>
+  <img src="logo-boxgarage.jpg" alt="Box Garage Detail" class="footer-logo" />
+  <ul>
+    <li><a href="https://boxgaragedetail.com.br">Site principal</a></li>
+    <li><a href="https://boxgaragedetail.com.br#servicos">Serviços</a></li>
+    <li><a href="https://boxgaragedetail.com.br#contato">Contato</a></li>
+  </ul>
+  <p class="f-copy">© 2026 Box Garage Detail · Veranópolis — RS · <a href="https://instagram.com/boxgaragedetail" style="color:inherit">@boxgaragedetail</a></p>
 </footer>
 
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+  }, { threshold:0.1 });
+  document.querySelectorAll('.fi').forEach(el => obs.observe(el));
+</script>
 </body>
 </html>
